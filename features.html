@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worshiply - Features</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-gradient {
+            background: linear-gradient(135deg, #064e3b, #10b981);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <nav class="bg-gray-800 shadow-md p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-emerald-400">Worshiply</a>
+            <div>
+                <a href="index.html" class="text-gray-300 px-4 hover:text-white">Home</a>
+                <a href="#" class="text-emerald-400 font-semibold px-4">Features</a>
+                <a href="pricing.html" class="text-gray-300 px-4 hover:text-white">Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="text-center py-20 px-4 bg-gradient">
+        <h1 class="text-5xl font-extrabold text-white fade-in">Powerful Features</h1>
+        <p class="text-lg text-gray-200 mt-4 fade-in">Everything you need to manage your church effortlessly.</p>
+    </section>
+
+    <section class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 py-16 px-4">
+        <div class="p-6 bg-gray-800 rounded-lg shadow-lg fade-in">
+            <h3 class="text-2xl font-semibold text-emerald-400">Member Management</h3>
+            <p class="text-gray-300 mt-2">Keep track of your congregation with ease.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-lg shadow-lg fade-in">
+            <h3 class="text-2xl font-semibold text-emerald-400">Event Scheduling</h3>
+            <p class="text-gray-300 mt-2">Plan and organize services, meetings, and events.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-lg shadow-lg fade-in">
+            <h3 class="text-2xl font-semibold text-emerald-400">Online Giving</h3>
+            <p class="text-gray-300 mt-2">Make contributions simple and secure.</p>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-lg shadow-lg fade-in">
+            <h3 class="text-2xl font-semibold text-emerald-400">Volunteer Coordination</h3>
+            <p class="text-gray-300 mt-2">Manage volunteers and schedules effortlessly.</p>
+        </div>
+    </section>
+
+    <footer class="text-center p-6 text-gray-400 bg-gray-800 mt-auto">
+        Worshiply &copy; 2025. All rights reserved.
+    </footer>
+</body>
+</html>
+
